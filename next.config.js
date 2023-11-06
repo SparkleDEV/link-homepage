@@ -4,6 +4,9 @@ const nextConfig = {
 		remotePatterns: [
 			{
 				hostname: 'gravatar.com'
+			},
+			{
+				hostname: 'sparkledev.github.io'
 			}
 		]
 	}

@@ -24,7 +24,7 @@ const CopyList: FC<CopyistComponentProps> = ({ entries }) => {
 				{entries.map((entry, index) => (
 					<li
 						key={index}
-						className="mb-2 flex flex-col items-stretch rounded-md border-2 border-theme-border bg-theme-bg px-2 py-1 shadow-link last:mb-0"
+						className="mb-2 flex cursor-pointer flex-col items-stretch rounded-md border-2 border-theme-border bg-theme-bg px-2 py-1 shadow-link transition-all duration-200 last:mb-0 hover:scale-105"
 						onClick={() => copyEntry(entry.value)}
 					>
 						<div className="mb-2 mt-1 flex items-center justify-between px-2">
@@ -41,7 +41,7 @@ const CopyList: FC<CopyistComponentProps> = ({ entries }) => {
 							type="text"
 							value={entry.value}
 							readOnly
-							className="bg-theme-input rounded-md border-none px-2 py-1 font-semibold outline-none"
+							className="cursor-pointer rounded-md border-none bg-theme-input px-2 py-1 font-semibold outline-none"
 						/>
 					</li>
 				))}
