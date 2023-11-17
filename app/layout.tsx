@@ -15,6 +15,9 @@ export const metadata: Metadata = {
 		images: 'https://gravatar.com/avatar/35cf335164df0366467714d593e0e593',
 		url: 'https://sparkle.gay',
 		type: 'profile'
+	},
+	twitter: {
+		card: 'summary'
 	}
 }
 
