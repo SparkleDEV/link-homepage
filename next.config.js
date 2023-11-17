@@ -7,6 +7,9 @@ const nextConfig = {
 			},
 			{
 				hostname: 'sparkledev.github.io'
+			},
+			{
+				hostname: 'media.tenor.com'
 			}
 		]
 	}
