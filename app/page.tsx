@@ -16,7 +16,7 @@ const Home: FC = async () => {
 	const copylistData = await useCopylistData()
 
 	return (
-		<main className="flex h-screen justify-center md:items-center">
+		<main className="flex min-h-screen justify-center md:items-center">
 			<div className="flex flex-col rounded-lg bg-theme-card p-5 shadow-card">
 				<ProfileHead />
 				{linklistData.data !== undefined ? (
