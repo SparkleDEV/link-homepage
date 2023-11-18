@@ -1,7 +1,13 @@
 import { FC } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import { Metadata } from 'next'
 import TicTacToe from './components/TicTacToe'
+
+export const metadata: Metadata = {
+	title: 'Page not found | sparkle.gay',
+	description: "This isn't the page you've been looking for"
+}
 
 const NotFound: FC = () => {
 	return (
