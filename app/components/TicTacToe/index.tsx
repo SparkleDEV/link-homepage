@@ -101,7 +101,7 @@ const TicTacToe: FC = () => {
 	}
 
 	const handleClick = (fieldIndex: number) => {
-		if (playersTurn && !winner) {
+		if (playersTurn && !winner && gameBoard[fieldIndex] === 'empty') {
 			setPlayersTurn(false)
 			setField(fieldIndex, 'player')
 		}
