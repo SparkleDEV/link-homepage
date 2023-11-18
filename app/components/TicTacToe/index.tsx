@@ -132,7 +132,7 @@ const TicTacToe: FC = () => {
 		<>
 			<div className="my-2 font-bold">
 				{winner === 'com' && <span className="text-red-300">I won! :D</span>}
-				{winner === 'draw' && <span className="text-indigo-300">It's a draw!</span>}
+				{winner === 'draw' && <span className="text-indigo-300">{"It's a draw!"}</span>}
 				{winner === 'player' && <span className="text-green-400">You won (against an unbeatable AI, wow!)</span>}
 			</div>
 			<div className="grid grid-cols-3 px-16 py-3">
