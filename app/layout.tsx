@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 	openGraph: {
 		title: "Vivian's Homepage",
 		description: "A collection of links to Vivian's profiles",
-		images: 'https://gravatar.com/avatar/35cf335164df0366467714d593e0e593',
+		images: `${process.env.DATA_HOST}/img/avatar.png`,
 		url: 'https://sparkle.gay',
 		type: 'profile'
 	},
