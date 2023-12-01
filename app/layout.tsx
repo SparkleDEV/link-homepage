@@ -1,7 +1,9 @@
 import './globals.css'
+import {} from 'fs'
 
 import type { Metadata } from 'next'
 import { Quicksand } from 'next/font/google'
+import fetchRelMeData from '@/requests/relMeData'
 
 const quicksand = Quicksand({ subsets: ['latin'] })
 
@@ -21,10 +23,13 @@ export const metadata: Metadata = {
 	}
 }
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
+	const relMeData = await fetchRelMeData()
+
 	return (
 		<html lang="en">
-			<link rel="me" href="https://tech.lgbt/@Sparkle" />
+			{/* <link rel="me" href="https://tech.lgbt/@Sparkle" /> */}
+			{relMeData.data && relMeData.data.map((rel, index) => <link rel="me" href={rel} key={index} />)}
 			<body className={`${quicksand.className} bg-theme-bg text-center text-gray-300`}>{children}</body>
 		</html>
 	)
