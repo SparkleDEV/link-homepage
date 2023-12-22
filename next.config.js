@@ -8,7 +8,8 @@ const nextConfig = {
 			{
 				hostname: 'media.tenor.com'
 			}
-		]
+		],
+		minimumCacheTTL: 60 * 10 // Refetch images after 10 Minutes
 	}
 }
 

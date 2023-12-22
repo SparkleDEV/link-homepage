@@ -28,7 +28,6 @@ export default async function RootLayout({ children }: { children: React.ReactNo
 
 	return (
 		<html lang="en">
-			{/* <link rel="me" href="https://tech.lgbt/@Sparkle" /> */}
 			{relMeData.data && relMeData.data.map((rel, index) => <link rel="me" href={rel} key={index} />)}
 			<body className={`${quicksand.className} bg-theme-bg text-center text-gray-300`}>{children}</body>
 		</html>
